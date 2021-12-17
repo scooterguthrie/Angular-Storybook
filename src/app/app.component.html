@@ -4,30 +4,25 @@
   <div class="card">
     <div class="card-body">
       <div class="d-sm-flex flex-nowrap">
-        <app-button
+        <button
+          app-button
           buttonLabel="Primary"
-          addClass="ml-sm-4 mb-4 order-3"
+          class="ml-sm-4 mb-4 order-3"
           [buttonResponsive]="true">
-        </app-button>
-        <app-button
+        </button>
+        <button
+          app-button rank="secondary"
           buttonLabel="Secondary"
-          addClass="ml-sm-4 mb-4 order-2"
-          rank="secondary"
-          [textNoWrap]="true"
+          class="ml-sm-4 mb-4 order-2"
           [buttonResponsive]="true">
-        </app-button>
-        <app-button
-          buttonLabel="Link"
-          addClass="ml-sm-4 mb-4 order-1"
+        </button>
+        <button
+          app-button
           rank="link"
-          [textNoWrap]="true"
+          buttonLabel="Link"
+          class="mr-auto mb-4 order-1"
           [buttonResponsive]="true">
-      </app-button>
-      </div>
-      <div class="d-sm-flex flex-nowrap">
-        <button type="button" class="btn btn-primary ml-sm-4 mb-4 btn-sm-block order-3">Primary</button>
-        <button type="button" class="btn btn-secondary ml-sm-4 mb-4 btn-sm-block order-2">Secondary</button>
-        <button type="button" class="btn btn-link mr-auto mb-4 btn-sm-block order-1">Link</button>
+        </button>
       </div>
       <div class="bg-dark text-light p-4">
         <p>Test</p>
