@@ -6,22 +6,26 @@
       <div class="d-sm-flex flex-nowrap">
         <button
           app-button
-          buttonLabel="Primary"
+          label="Primary"
           class="ml-sm-4 mb-4 order-3"
-          [buttonResponsive]="true">
+          [responsive]="true"
+          [minWidth]="true">
         </button>
         <button
-          app-button rank="secondary"
-          buttonLabel="Secondary"
+          app-button
+          rank="secondary"
+          label="Secondary"
           class="ml-sm-4 mb-4 order-2"
-          [buttonResponsive]="true">
+          [responsive]="true"
+          [minWidth]="true">
         </button>
         <button
           app-button
           rank="link"
-          buttonLabel="Link"
+          label="Link"
           class="mr-auto mb-4 order-1"
-          [buttonResponsive]="true">
+          [responsive]="true"
+          [minWidth]="true">
         </button>
       </div>
       <div class="bg-dark text-light p-4">

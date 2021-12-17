@@ -1,5 +1,11 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.btn {
+    &.btn-min-width {
+        min-width: 8rem;
+    }
+}
+
 @include media-breakpoint-only(xs) {
     .btn-sm-block {
         display: block;

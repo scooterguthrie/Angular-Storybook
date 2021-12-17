@@ -9,23 +9,32 @@ import { Component, Input } from '@angular/core';
     '[type]': 'buttonType',
     '[class.btn-primary]': 'rank === "primary"',
     '[class.btn-secondary]':'rank === "secondary"',
+    '[class.btn-success]':'rank === "success"',
+    '[class.btn-danger]':'rank === "danger"',
+    '[class.btn-warning]':'rank === "warning"',
+    '[class.btn-info]':'rank === "info"',
+    '[class.btn-light]':'rank === "light"',
+    '[class.btn-dark]':'rank === "dark"',
     '[class.btn-link]': 'rank === "link"',
     '[class.text-nowrap]': 'textNoWrap',
     '[class.btn-sm]': 'size === "small"',
     '[class.btn-lg]': 'size === "large"',
-    '[class.btn-block]': 'buttonBlock',
-    '[disabled]': 'buttonDisabled',
-    '[class.disabled]': 'buttonDisabled',
-    '[class.btn-sm-block]': 'buttonResponsive'
+    '[class.btn-min-width]': 'minWidth',
+    '[class.btn-block]': 'block',
+    '[disabled]': 'disabled',
+    '[class.disabled]': 'disabled',
+    '[class.btn-sm-block]': 'responsive'
   }
 })
 export class ButtonComponent {
-  @Input() buttonLabel!: string;
-  @Input() buttonType: "button" | "submit" | "reset" = "button";
-  @Input() rank: "primary" | "secondary" | "link" = "primary";
+  @Input() label!: string;
+  @Input() type: "button" | "submit" | "reset" = "button";
+  @Input() rank: "primary" | "secondary" | "success" | "danger" | "warning" | "info" | "light" | "dark" | "link" = "primary";
+  @Input() outline = false;
   @Input() textNoWrap = false;
   @Input() size?: "small" | "large";
-  @Input() buttonBlock = false;
-  @Input() buttonDisabled=false;
-  @Input() buttonResponsive=false;
+  @Input() minWidth = false;
+  @Input() block = false;
+  @Input() disabled=false;
+  @Input() responsive=false;
 }
