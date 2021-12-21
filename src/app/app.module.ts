@@ -12,6 +12,7 @@ import { CardsComponent } from './components/_master-components/cards/cards.comp
 import { ButtonSizesComponent } from './components/button-examples/button-sizes/button-sizes.component';
 import { ButtonWidthComponent } from './components/button-examples/button-width/button-width.component';
 import { ButtonDisabledComponent } from './components/button-examples/button-disabled/button-disabled.component';
+import { ButtonResponsiveReorderedComponent } from './components/button-examples/button-responsive-reordered/button-responsive-reordered.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ButtonDisabledComponent } from './components/button-examples/button-dis
     CardsComponent,
     ButtonSizesComponent,
     ButtonWidthComponent,
-    ButtonDisabledComponent
+    ButtonDisabledComponent,
+    ButtonResponsiveReorderedComponent
   ],
   imports: [
     BrowserModule,
