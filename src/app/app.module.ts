@@ -9,6 +9,8 @@ import { ButtonBaseComponent } from './components/button-examples/button-base/bu
 import { ButtonOutlineComponent } from './components/button-examples/button-outline/button-outline.component';
 import { ButtonWithIconComponent } from './components/button-examples/button-with-icon/button-with-icon.component';
 import { CardsComponent } from './components/_master-components/cards/cards.component';
+import { ButtonSizesComponent } from './components/button-examples/button-sizes/button-sizes.component';
+import { ButtonWidthComponent } from './components/button-examples/button-width/button-width.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CardsComponent } from './components/_master-components/cards/cards.comp
     ButtonBaseComponent,
     ButtonOutlineComponent,
     ButtonWithIconComponent,
-    CardsComponent
+    CardsComponent,
+    ButtonSizesComponent,
+    ButtonWidthComponent
   ],
   imports: [
     BrowserModule,
