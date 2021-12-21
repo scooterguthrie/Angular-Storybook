@@ -1,58 +1,61 @@
-<h3>Basic Button Examples</h3>
-<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+<h3>Outline buttons</h3>
+<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the
+    .btn-outline-* ones to remove all background images and colors on any button.</p>
 <div class="card mb-4">
     <div class="card-body">
         <button
           app-button
           label="Primary"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Secondary"
           rank="secondary"
+          label="Secondary"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Success"
           rank="success"
+          label="Success"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Danger"
           rank="danger"
+          label="Danger"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Warning"
           rank="warning"
+          label="Warning"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Info"
           rank="info"
+          label="Info"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Light"
           rank="light"
+          label="Light"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <button
           app-button
-          label="Dark"
           rank="dark"
-          class="mr-4 mb-4">
-        </button>
-        <button
-          app-button
-          label="Link"
-          rank="link"
+          label="Dark"
+          [outline]="true"
           class="mr-4 mb-4">
         </button>
         <div class="bg-dark p-4 text-light">

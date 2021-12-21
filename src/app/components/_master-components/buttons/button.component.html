@@ -1,1 +1,7 @@
-{{label}}
+<i
+    *ngIf="iconLeft && !inProgress"
+    [ngClass]="{'material-icons': true, 'icon-sm': size === 'small', 'icon-lg': size === 'large', 'mr-1': label.length > 0}">
+    {{ iconLeft }}
+</i>
+<span *ngIf="inProgress" class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span>
+<span>{{ label }}</span>

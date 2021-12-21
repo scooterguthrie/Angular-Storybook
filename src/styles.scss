@@ -1,5 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fontsource/material-icons/base.css";
 
+// Buttons
+///////////////////////////////////////////////////////////////////////////////////////////
 .btn {
     &.btn-min-width {
         min-width: 8rem;
@@ -10,5 +13,37 @@
     .btn-sm-block {
         display: block;
         width: 100%;
+    }
+}
+
+
+// Material Icons
+///////////////////////////////////////////////////////////////////////////////////////////
+.material-icons {
+
+    // Position Fix
+    margin-top: -.125rem;
+    vertical-align: middle;
+    position: relative;
+
+    // Browser Support
+    -webkit-font-smoothing: antialiased; // Support for all WebKit browsers.
+    text-rendering: optimizeLegibility; // Support for Safari and Chrome.
+    -moz-osx-font-smoothing: grayscale; // Support for Firefox.
+
+    // Icon sizes
+    &.icon-sm {
+        font-size: 18px;
+        transform: rotate(0.03deg);
+    }
+
+    &.icon-lg {
+        font-size: 29px;
+    }
+}
+
+.btn {
+    .material-icons {
+        margin-top: -.253rem;
     }
 }

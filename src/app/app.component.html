@@ -1,36 +1,22 @@
 <div class="container-xl">
-  <h1>Style Guide</h1>
+  <h1>Labcorp | Bootstrap Style Guide</h1>
   <app-button-examples></app-button-examples>
-  <h3>Responsive Sample</h3>
-  <div class="card">
+  <h3>Responsive and Reorder Sample</h3>
+  <div class="card mb-4">
     <div class="card-body">
       <div class="d-sm-flex flex-nowrap">
-        <button
-          app-button
-          label="Primary"
-          class="ml-sm-4 mb-4 order-3"
-          [responsive]="true"
+        <button app-button label="Primary" class="ml-sm-4 mb-4 order-3" [responsive]="true" [minWidth]="true">
+        </button>
+        <button app-button rank="secondary" label="Secondary" class="ml-sm-4 mb-4 order-2" [responsive]="true"
           [minWidth]="true">
         </button>
-        <button
-          app-button
-          rank="secondary"
-          label="Secondary"
-          class="ml-sm-4 mb-4 order-2"
-          [responsive]="true"
-          [minWidth]="true">
-        </button>
-        <button
-          app-button
-          rank="link"
-          label="Link"
-          class="mr-auto mb-4 order-1"
-          [responsive]="true"
-          [minWidth]="true">
+        <button app-button rank="link" label="Link" class="mr-auto mb-4 order-1" [responsive]="true" [minWidth]="true">
         </button>
       </div>
       <div class="bg-dark text-light p-4">
-        <p>Test</p>
+        Sample code here
       </div>
     </div>
   </div>
+  <!-- <app-cards></app-cards> -->
+</div>
