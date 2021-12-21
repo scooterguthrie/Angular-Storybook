@@ -29,8 +29,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     '[class.btn-lg]': 'size === "large"',
     '[class.btn-min-width]': 'minWidth',
     '[class.btn-block]': 'block',
-    '[class.disabled.user-select-none]': 'disabled || inProgress',
-    '[class.btn-sm-block]': 'responsive'
+    '[class.btn-sm-block]': 'responsive',
+    '[class.disabled]': 'disabled || inProgress',
+    //'[disabled]': 'disabled || inProgress',
+    '[attr.aria-disabled]': 'disabled || inProgress'
   }
 })
 export class ButtonComponent {

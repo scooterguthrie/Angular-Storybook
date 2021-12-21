@@ -1,0 +1,64 @@
+<h3>Disabled buttons</h3>
+<p>Some screen readers do not see buttons with the disabled attribute. Therefore, use the class .disabled and the aria-disabled="true" attribute. For more information on this subject click <a href="https://a11y-101.com/development/aria-disabled" target="_blank">here</a>.</p>
+<div class="card mb-4">
+    <div class="card-body">
+        <button
+          app-button
+          label="Primary"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="secondary"
+          label="Secondary"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="success"
+          label="Success"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="danger"
+          label="Danger"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="warning"
+          label="Warning"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="info"
+          label="Info"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="light"
+          label="Light"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <button
+          app-button
+          rank="dark"
+          label="Dark"
+          [disabled]="true"
+          class="mr-4 mb-4">
+        </button>
+        <div class="bg-dark p-4 text-light">
+            Sample code here
+        </div>
+    </div>
+</div>
