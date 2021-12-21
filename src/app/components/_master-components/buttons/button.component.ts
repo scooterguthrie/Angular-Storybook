@@ -29,8 +29,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     '[class.btn-lg]': 'size === "large"',
     '[class.btn-min-width]': 'minWidth',
     '[class.btn-block]': 'block',
-    '[disabled]': 'disabled',
-    '[class.disabled]': 'disabled || inProgress',
+    '[class.disabled.user-select-none]': 'disabled || inProgress',
     '[class.btn-sm-block]': 'responsive'
   }
 })
