@@ -1,0 +1,1301 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "AppPage",
+            "id": "class-AppPage-d83b95cb897fd7f1ecc7216a31a9167598810a902c9c43ec11b6a93965548994186b900fe348e64bdf35a97b36d2fdb26731097dc1738e7f73bc67d2d432a47c",
+            "file": "e2e/src/app.po.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  async navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl);\n  }\n\n  async getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText();\n  }\n}\n",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getTitleText",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<string>",
+                    "typeParameters": [],
+                    "line": 8,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        131
+                    ]
+                },
+                {
+                    "name": "navigateTo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<>",
+                    "typeParameters": [],
+                    "line": 4,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        131
+                    ]
+                }
+            ],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-695fdf591210392d88dd52763b30bd3c42491ef085811411ec453a54b1e5e11e8d7d3a1b01a5de79980fe4120d7248e5c53f89a23272d786635fbb4ffbe3c1d9",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'Angular Storybook'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html',\r\n  styleUrls: ['./app.component.scss']\r\n})\r\nexport class AppComponent {\r\n  title = 'Angular Storybook';\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<div class=\"container-xl\">\r\n  <h1>Labcorp | Bootstrap Style Guide</h1>\r\n  <app-button-examples></app-button-examples>\r\n  <!-- <app-cards></app-cards> -->\r\n</div>"
+        },
+        {
+            "name": "ButtonBaseComponent",
+            "id": "component-ButtonBaseComponent-5c6470f1c8f1d2936b2f0196f4885faa6294c5d5991f90244b749d4ce710c3a742c248c215ad88f54ab1f4abf20b9f575358721056fe6755c5df5b8f0ed660e0",
+            "file": "src/app/components/button-examples/button-base/button-base.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-base",
+            "styleUrls": [
+                "./button-base.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-base.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-base',\r\n  templateUrl: './button-base.component.html',\r\n  styleUrls: ['./button-base.component.scss']\r\n})\r\nexport class ButtonBaseComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-base.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Basic Button Examples</h3>\r\n<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <button\r\n          app-button\r\n          label=\"Primary\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Secondary\"\r\n          rank=\"secondary\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Success\"\r\n          rank=\"success\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Danger\"\r\n          rank=\"danger\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Warning\"\r\n          rank=\"warning\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Info\"\r\n          rank=\"info\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Light\"\r\n          rank=\"light\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Dark\"\r\n          rank=\"dark\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Link\"\r\n          rank=\"link\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-72301cda372d22f93441b8010110f86744f72135c9bb4df11ed9315306132b990ea86a2e5a48135ea6e2f06eb54879aa785b60044a48588761bccbc25443857b",
+            "file": "src/app/components/_master-components/buttons/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "host": {},
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "[app-button]",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "block",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 46,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 47,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "iconLeft",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 49,
+                    "type": "\"add_circlr-outline\" | string",
+                    "decorators": []
+                },
+                {
+                    "name": "inProgress",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 50,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 39,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "link",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 51,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "minWidth",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "outline",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 42,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "rank",
+                    "defaultValue": "\"primary\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 41,
+                    "type": "\"primary\" | \"secondary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\" | \"link\"",
+                    "decorators": []
+                },
+                {
+                    "name": "responsive",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 48,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "\"default\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 44,
+                    "type": "\"small\" | \"default\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "textNoWrap",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 43,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "\"button\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 40,
+                    "type": "\"button\" | \"submit\" | \"reset\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "handleClick",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 52,
+                    "type": "EventEmitter<void>"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: '[app-button]',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss'],\r\n  host: {\r\n    'class': 'btn',\r\n    '[type]': 'type',\r\n    '[class.btn-primary]': 'rank === \"primary\" && !outline',\r\n    '[class.btn-outline-primary]': 'rank === \"primary\" && outline',\r\n    '[class.btn-secondary]':'rank === \"secondary\" && !outline',\r\n    '[class.btn-outline-secondary]': 'rank === \"secondary\" && outline',\r\n    '[class.btn-success]':'rank === \"success\" && !outline',\r\n    '[class.btn-outline-success]': 'rank === \"success\" && outline',\r\n    '[class.btn-danger]':'rank === \"danger\" && !outline',\r\n    '[class.btn-outline-danger]': 'rank === \"danger\" && outline',\r\n    '[class.btn-warning]':'rank === \"warning\" && !outline',\r\n    '[class.btn-outline-warning]': 'rank === \"warning\" && outline',\r\n    '[class.btn-info]':'rank === \"info\" && !outline',\r\n    '[class.btn-outline-info]': 'rank === \"info\" && outline',\r\n    '[class.btn-light]':'rank === \"light\" && !outline',\r\n    '[class.btn-outline-light]': 'rank === \"light\" && outline',\r\n    '[class.btn-dark]':'rank === \"dark\" && !outline',\r\n    '[class.btn-outline-dark]': 'rank === \"dark\" && outline',\r\n    '[class.btn-link]': 'rank === \"link\"',\r\n    '[class.text-nowrap]': 'textNoWrap',\r\n    '[class.btn-sm]': 'size === \"small\"',\r\n    '[class.btn-lg]': 'size === \"large\"',\r\n    '[class.btn-min-width]': 'minWidth',\r\n    '[class.btn-block]': 'block',\r\n    '[class.btn-sm-block]': 'responsive',\r\n    '[class.disabled]': 'disabled || inProgress',\r\n    //'[disabled]': 'disabled || inProgress',\r\n    '[attr.aria-disabled]': 'disabled || inProgress'\r\n  }\r\n})\r\nexport class ButtonComponent {\r\n  @Input() label!: string;\r\n  @Input() type: \"button\" | \"submit\" | \"reset\" = \"button\";\r\n  @Input() rank: \"primary\" | \"secondary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\" | \"link\" = \"primary\";\r\n  @Input() outline = false;\r\n  @Input() textNoWrap = false;\r\n  @Input() size: \"small\" | \"default\" | \"large\" = \"default\";\r\n  @Input() minWidth = false;\r\n  @Input() block = false;\r\n  @Input() disabled=false;\r\n  @Input() responsive=false;\r\n  @Input() iconLeft?: 'add_circlr-outline' | string;\r\n  @Input() inProgress=false;\r\n  @Input() link?: string;\r\n  @Output() handleClick: EventEmitter<void> = new EventEmitter();\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<i\r\n    *ngIf=\"iconLeft && !inProgress\"\r\n    [ngClass]=\"{'material-icons': true, 'icon-sm': size === 'small', 'icon-lg': size === 'large', 'mr-1': label.length > 0}\">\r\n    {{ iconLeft }}\r\n</i>\r\n<span *ngIf=\"inProgress\" class=\"spinner-border spinner-border-sm mr-1\" role=\"status\" aria-hidden=\"true\"></span>\r\n<span>{{ label }}</span>"
+        },
+        {
+            "name": "ButtonDisabledComponent",
+            "id": "component-ButtonDisabledComponent-344d9a4cfa1c85b44d946c20fa577aede12689a1172de212d996eac0fcabaa82c369cf98a7dcb3cfe83ea81540afad1316a46c252db50e6a41e11069e09b79e6",
+            "file": "src/app/components/button-examples/button-disabled/button-disabled.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-disabled",
+            "styleUrls": [
+                "./button-disabled.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-disabled.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-disabled',\r\n  templateUrl: './button-disabled.component.html',\r\n  styleUrls: ['./button-disabled.component.scss']\r\n})\r\nexport class ButtonDisabledComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-disabled.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Disabled buttons</h3>\r\n<p>Some screen readers do not see buttons with the disabled attribute. Therefore, use the class .disabled and the aria-disabled=\"true\" attribute. For more information on this subject click <a href=\"https://a11y-101.com/development/aria-disabled\" target=\"_blank\">here</a>.</p>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <button\r\n          app-button\r\n          label=\"Primary\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"secondary\"\r\n          label=\"Secondary\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"success\"\r\n          label=\"Success\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"danger\"\r\n          label=\"Danger\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"warning\"\r\n          label=\"Warning\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"info\"\r\n          label=\"Info\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"light\"\r\n          label=\"Light\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"dark\"\r\n          label=\"Dark\"\r\n          [disabled]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ButtonExamplesComponent",
+            "id": "component-ButtonExamplesComponent-7dfcc69c5d403ecc9cd26ad82af4f1b75667abfb332fe7ba7fa2a269eab7c7b28e0a1fc441197b93353583d482ea3fbf5047d6ae2db78d24c8b5b8b943a90eac",
+            "file": "src/app/components/button-examples/button-examples.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-examples",
+            "styleUrls": [
+                "./button-examples.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-examples.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-examples',\r\n  templateUrl: './button-examples.component.html',\r\n  styleUrls: ['./button-examples.component.scss']\r\n})\r\nexport class ButtonExamplesComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-examples.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h2>Buttons</h2>\r\n<p class=\"lead\">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>\r\n<app-button-base></app-button-base>\r\n<app-button-outline></app-button-outline>\r\n<app-button-disabled></app-button-disabled>\r\n<app-button-sizes></app-button-sizes>\r\n<app-button-width></app-button-width>\r\n<app-button-with-icon></app-button-with-icon>\r\n<app-button-responsive-reordered></app-button-responsive-reordered>"
+        },
+        {
+            "name": "ButtonOutlineComponent",
+            "id": "component-ButtonOutlineComponent-095f829a59349b704a2740ff8025fbdd825b64eb6256fda2b43b9684b0610044d8992f1a89ed5a548e2bdd7dd100e133de4b16aa6b5f4be12f505491520804df",
+            "file": "src/app/components/button-examples/button-outline/button-outline.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-outline",
+            "styleUrls": [
+                "./button-outline.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-outline.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-outline',\r\n  templateUrl: './button-outline.component.html',\r\n  styleUrls: ['./button-outline.component.scss']\r\n})\r\nexport class ButtonOutlineComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-outline.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Outline buttons</h3>\r\n<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the\r\n    .btn-outline-* ones to remove all background images and colors on any button.</p>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <button\r\n          app-button\r\n          label=\"Primary\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"secondary\"\r\n          label=\"Secondary\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"success\"\r\n          label=\"Success\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"danger\"\r\n          label=\"Danger\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"warning\"\r\n          label=\"Warning\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"info\"\r\n          label=\"Info\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"light\"\r\n          label=\"Light\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          rank=\"dark\"\r\n          label=\"Dark\"\r\n          [outline]=\"true\"\r\n          class=\"mr-4 mb-4\">\r\n        </button>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "ButtonResponsiveReorderedComponent",
+            "id": "component-ButtonResponsiveReorderedComponent-ea1cde984d819d6b848c9294d0c1057e749a462525dd247788798f45b8e7588af1186afc41caa65a681db4806fb4967c8593348c744a4336fae150973f049e33",
+            "file": "src/app/components/button-examples/button-responsive-reordered/button-responsive-reordered.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-responsive-reordered",
+            "styleUrls": [
+                "./button-responsive-reordered.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-responsive-reordered.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-responsive-reordered',\r\n  templateUrl: './button-responsive-reordered.component.html',\r\n  styleUrls: ['./button-responsive-reordered.component.scss']\r\n})\r\nexport class ButtonResponsiveReorderedComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-responsive-reordered.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Responsive and Reorder Sample</h3>\r\n<div class=\"card mb-4\">\r\n  <div class=\"card-body\">\r\n    <div class=\"d-sm-flex flex-nowrap\">\r\n      <button app-button label=\"Primary\" class=\"ml-sm-4 mb-4 order-sm-3\" [responsive]=\"true\" [minWidth]=\"true\">\r\n      </button>\r\n      <button app-button rank=\"secondary\" label=\"Secondary\" class=\"ml-sm-4 mb-4 order-sm-2\" [responsive]=\"true\"\r\n        [minWidth]=\"true\">\r\n      </button>\r\n      <button app-button rank=\"link\" label=\"Link\" class=\"mr-auto mb-4 order-sm-1\" [responsive]=\"true\" [minWidth]=\"true\">\r\n      </button>\r\n    </div>\r\n    <div class=\"bg-dark text-light p-4\">\r\n      Sample code here\r\n    </div>\r\n  </div>\r\n</div>"
+        },
+        {
+            "name": "ButtonSizesComponent",
+            "id": "component-ButtonSizesComponent-ca81f35dde6fe411ad0c130f9cf2b5823745ce0013bb9f9af8657498da5322bbe3f01aa6129d645820fc90208510688b89447446dafec11d7426c3cb95e71bb5",
+            "file": "src/app/components/button-examples/button-sizes/button-sizes.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-sizes",
+            "styleUrls": [
+                "./button-sizes.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-sizes.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-sizes',\r\n  templateUrl: './button-sizes.component.html',\r\n  styleUrls: ['./button-sizes.component.scss']\r\n})\r\nexport class ButtonSizesComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-sizes.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Sizes</h3>\r\n<p>Fancy larger or smaller buttons? Add .btn-lg or .btn-sm for additional sizes.</p>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <button\r\n          app-button\r\n          label=\"Large Button\"\r\n          class=\"mr-4 mb-4\"\r\n          size=\"large\">\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Small Button\"\r\n          class=\"mr-4 mb-4\"\r\n          size=\"small\">\r\n        </button>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "ButtonWidthComponent",
+            "id": "component-ButtonWidthComponent-b77d37954a1fd3f8ec548adb7ce7c27e94a37cf2d5e6a3ca117e98922783abacdf7e36353892d39f81013fc9be4efef3790f8ce9e2ff8fbffa3a2ffffb50c7fb",
+            "file": "src/app/components/button-examples/button-width/button-width.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-width",
+            "styleUrls": [
+                "./button-width.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-width.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-width',\r\n  templateUrl: './button-width.component.html',\r\n  styleUrls: ['./button-width.component.scss']\r\n})\r\nexport class ButtonWidthComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-width.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Width</h3>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <button\r\n          app-button\r\n          label=\"MinWidth\"\r\n          class=\"mr-4 mb-4\"\r\n          [minWidth]=true>\r\n        </button>\r\n        <button\r\n          app-button\r\n          label=\"Block (100% width) Button\"\r\n          class=\"mr-4 mb-4\"\r\n          [block]=true>\r\n        </button>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "ButtonWithIconComponent",
+            "id": "component-ButtonWithIconComponent-1a0817508dd8f0e13e526cd0902d1045bbdfe990a620c45cdc14906305abf7f7ee5839824fa8fcb1b6cc9e9e1eb55a44ee56539af6cb18c2f779fb3caa741d56",
+            "file": "src/app/components/button-examples/button-with-icon/button-with-icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-with-icon",
+            "styleUrls": [
+                "./button-with-icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-with-icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-with-icon',\r\n  templateUrl: './button-with-icon.component.html',\r\n  styleUrls: ['./button-with-icon.component.scss']\r\n})\r\nexport class ButtonWithIconComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-with-icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<h3>Buttons with Icons</h3>\r\n<div class=\"card mb-4\">\r\n    <div class=\"card-body\">\r\n        <div>\r\n            <button app-button label=\"Primary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\" size=\"large\"></button>\r\n            <button app-button label=\"Secondary\" rank=\"secondary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\" size=\"large\"></button>\r\n        </div>\r\n        <div>\r\n            <button app-button label=\"Primary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\"></button>\r\n            <button app-button label=\"Secondary\" rank=\"secondary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\"></button>\r\n        </div>\r\n        <div>\r\n            <button app-button label=\"Primary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\" size=\"small\"></button>\r\n            <button app-button label=\"Secondary\" rank=\"secondary\" iconLeft=\"add_circle\" class=\"mr-4 mb-4\" size=\"small\"></button>\r\n        </div>\r\n        <div class=\"bg-dark p-4 text-light\">\r\n            Sample code here\r\n        </div>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "CardsComponent",
+            "id": "component-CardsComponent-8d2151062833f575184994f6105d54f9911dbf980783a792c640ef6ccc4a4cc58b07014e82b0bef4b8de3e0de81c363c6a853a7d03758d4c984c8b4c7e45bf62",
+            "file": "src/app/components/_master-components/cards/cards.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-cards",
+            "styleUrls": [
+                "./cards.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./cards.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-cards',\r\n  templateUrl: './cards.component.html',\r\n  styleUrls: ['./cards.component.scss']\r\n})\r\nexport class CardsComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./cards.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"card\">\r\n    <div class=\"card-header\">Card Header</div>\r\n    <img src=\"...\" class=\"card-img-top\" alt=\"...\">\r\n    <ul class=\"list-group list-group-flush\">\r\n        <li class=\"list-group-item\">An item</li>\r\n        <li class=\"list-group-item\">A second item</li>\r\n        <li class=\"list-group-item\">A third item</li>\r\n    </ul>\r\n    <div class=\"card-body\">\r\n        <h5 class=\"card-title\">Card title</h5>\r\n        <h6 class=\"card-subtitle mb-2 text-muted\">Card subtitle</h6>\r\n        <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card'scontent.</p>\r\n    </div>\r\n    <div class=\"card-footer\">\r\n        Card Footer\r\n    </div>\r\n</div>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-4dd728cdb4634559bb38ed3872ed4e7a9001e5eebee951002198447ab4728010d8c851483e7ca91a7cd253fa26b1e75b97817fb72c206c439ccf69974003c234",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { ButtonComponent } from './components/_master-components/buttons/button.component';\r\nimport { ButtonExamplesComponent } from './components/button-examples/button-examples.component';\r\nimport { ButtonBaseComponent } from './components/button-examples/button-base/button-base.component';\r\nimport { ButtonOutlineComponent } from './components/button-examples/button-outline/button-outline.component';\r\nimport { ButtonWithIconComponent } from './components/button-examples/button-with-icon/button-with-icon.component';\r\nimport { CardsComponent } from './components/_master-components/cards/cards.component';\r\nimport { ButtonSizesComponent } from './components/button-examples/button-sizes/button-sizes.component';\r\nimport { ButtonWidthComponent } from './components/button-examples/button-width/button-width.component';\r\nimport { ButtonDisabledComponent } from './components/button-examples/button-disabled/button-disabled.component';\r\nimport { ButtonResponsiveReorderedComponent } from './components/button-examples/button-responsive-reordered/button-responsive-reordered.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    ButtonComponent,\r\n    ButtonExamplesComponent,\r\n    ButtonBaseComponent,\r\n    ButtonOutlineComponent,\r\n    ButtonWithIconComponent,\r\n    CardsComponent,\r\n    ButtonSizesComponent,\r\n    ButtonWidthComponent,\r\n    ButtonDisabledComponent,\r\n    ButtonResponsiveReorderedComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "ButtonBaseComponent"
+                        },
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "ButtonDisabledComponent"
+                        },
+                        {
+                            "name": "ButtonExamplesComponent"
+                        },
+                        {
+                            "name": "ButtonOutlineComponent"
+                        },
+                        {
+                            "name": "ButtonResponsiveReorderedComponent"
+                        },
+                        {
+                            "name": "ButtonSizesComponent"
+                        },
+                        {
+                            "name": "ButtonWidthComponent"
+                        },
+                        {
+                            "name": "ButtonWithIconComponent"
+                        },
+                        {
+                            "name": "CardsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-78922b3ae99d2c5249b333980bd5afde1b120b2cc6fedfd41b8b2cc90f279797cb4b22e183bf7e1d1dfab8c6100e77e7812c110234d81f866f544f28a3e18b15",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\r\n    props: args,\r\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/app/components/_master-components/buttons/button.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/_master-components/buttons/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\r\n    props: args,\r\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "e2e/src/app.po.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/_master-components/buttons/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/_master-components/buttons/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/_master-components/buttons/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/_master-components/buttons/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/_master-components/cards/cards.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-base/button-base.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonBaseComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-disabled/button-disabled.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonDisabledComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-examples.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonExamplesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-outline/button-outline.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonOutlineComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-responsive-reordered/button-responsive-reordered.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonResponsiveReorderedComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-sizes/button-sizes.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonSizesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-width/button-width.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonWidthComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button-examples/button-with-icon/button-with-icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonWithIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

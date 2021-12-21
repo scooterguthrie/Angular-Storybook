@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: '[app-button]',
+  selector: 'Button[app-button]',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   host: {
@@ -26,6 +26,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     '[class.btn-link]': 'rank === "link"',
     '[class.text-nowrap]': 'textNoWrap',
     '[class.btn-sm]': 'size === "small"',
+    '[class]': 'size === "default"',
     '[class.btn-lg]': 'size === "large"',
     '[class.btn-min-width]': 'minWidth',
     '[class.btn-block]': 'block',
